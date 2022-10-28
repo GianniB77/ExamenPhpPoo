@@ -2,6 +2,7 @@
 
 require_once('Item.class.php');
 require_once('ShoppingCart.class.php');
+require_once('Ticket.class.php');
 $item = new Item("corn flakes", 500, 1000);
 $panier = new ShoppingCart();
 $panier->addItem($item);
@@ -19,3 +20,5 @@ echo $panier->addItem($chocolat);
 echo $panier->getIdCart();
 //$panier2 = new ShoppingCart();
 //echo $panier2->getIdCart();
+$ticket = new Ticket("RGBY17032012 - Walles-France", 9000);
+echo $ticket;
