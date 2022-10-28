@@ -18,22 +18,27 @@ public function __toString() {
     return $this->name . ": " . number_format($this->price/100, 2) . " €";
   }
 
-function setName($name) {
+public function setName($name) {
     $this->name = $name;
   }
-  function getName() {
+
+public function getName() {
     return $this->name;
   }
-  function setPrice($price) {
+
+public function setPrice($price) {
     $this->price = $price;
   }
-  function getPrice() {
+
+public function getPrice() {
     return $this->price;
   }
-  function setWeight($weight) {
+  
+public function setWeight($weight) {
     $this->weight = $weight;
   }
-  function getWeight() {
+  
+public function getWeight() {
     return $this->weight;
   }
 }
