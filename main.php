@@ -3,6 +3,7 @@
 require_once('Item.class.php');
 require_once('FreshItem.class.php');
 require_once('ShoppingCart.class.php');
+require_once('Ticket.class.php');
 $item = new Item("corn flakes", 500, 1000);
 $panier = new ShoppingCart();
 $panier->addItem($item);
@@ -21,3 +22,5 @@ echo $panier->getIdCart() . "<br>";
 $chocolat = new FreshItem("chocolat", 350, 300, "2022-12-25");
 //echo $panier->addItem($chocolat);
 echo $chocolat;
+$ticket = new Ticket("RGBY17032012 - Walles-France", 9000);
+echo $ticket;
