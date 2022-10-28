@@ -5,6 +5,7 @@ class Item {
     public $name = "";
     public $price;
     public $weight;
+    private $taxPercentage = 1000;
 
 
 public function __construct($name, $price, $weight)
@@ -12,6 +13,7 @@ public function __construct($name, $price, $weight)
     $this->name = $name;
     $this->price = $price;
     $this->weight = $weight;
+    $this->taxPercentage = 1000;
 }
 
 public function __toString() {
@@ -41,5 +43,9 @@ public function setWeight($weight) {
 public function getWeight() {
     return $this->weight;
   }
+
+public function getTaxPerThousand() {
+  return $this->taxPercentage;
+}
 }
 
